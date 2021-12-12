@@ -1,0 +1,12 @@
+.sfondo-sid{
+    background-image: url("https://social.paolibostudio.com/img/6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-avatar{
+    width: 50px;
+    height: auto;
+}
+.col{
+    flex-shrink: 0;
+}
