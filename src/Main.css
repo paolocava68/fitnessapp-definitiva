@@ -10,3 +10,7 @@
 .col{
     flex-shrink: 0;
 }
+
+.text-right{
+    text-align: right;
+}

@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Login from './login'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+        <Router>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/home" element={<App />} />
+        <Route path="*" element={<Login />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
